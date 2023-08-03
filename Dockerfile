@@ -27,5 +27,5 @@ RUN apt update && apt install tar curl -y && \
     rm -rf /tmp/* && \
     rm -rf /var/lib/apt/lists/*
 
-ADD init.sh /bamboofw/init.sh
-RUN chmod 0755 /bamboofw/init.sh
+ADD etcd-init-auth.sh /bamboofw/etcd-init-auth.sh
+RUN chmod 0755 /bamboofw/etcd-init-auth.sh
